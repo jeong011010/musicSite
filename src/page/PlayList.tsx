@@ -45,7 +45,7 @@ export default function PlayList() {
         <Text m={0} textAlign="center" fontSize="2xl" fontWeight="bold" mt={5}>{data.name}</Text>
         <Text marginTop={0} textAlign="center" fontSize="lg" color={"gray"} mb={5}>{data.description}</Text>
         <Flex justify="center">
-          <Button colorScheme='blackAlpha' mb={10} minW={340} onClick={()=>linkTo(data.external_urls.spotify)}>지금 듣기</Button>
+          <Button colorScheme='red' mb={10} minW={340} onClick={()=>linkTo(data.external_urls.spotify)}>지금 듣기</Button>
         </Flex>
         <Stack align="center">
           {data.tracks.items?.map((track: Tracks) => (

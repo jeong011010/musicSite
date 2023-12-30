@@ -17,6 +17,7 @@
     "@vitejs/plugin-react": "^4.2.1",
     "axios": "^1.6.2",
     "framer-motion": "^10.16.5",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-query": "^3.39.3",
@@ -30,8 +31,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
+  "homepage": "http://jeong011010.github.io/musicSite",
   "eslintConfig": {
     "extends": [
       "react-app",
